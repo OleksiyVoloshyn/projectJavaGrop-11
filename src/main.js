@@ -1,0 +1,10 @@
+import "./js/About_me";
+import "./js/Benefits";
+import "./js/Covers";
+import "./js/FAQ";
+import "./js/Header";
+import "./js/helper";
+import "./js/Hero";
+import "./js/Projects";
+import "./js/Reviews";
+import "./js/Work_together";
