@@ -39,7 +39,7 @@ section {
     min-width: 320px;
     padding: 32px 0 32px 0;
     background-color: #1C1D20;
-    background-image: url(/src/img/Work_together/Glass\ effect\ 375x1.png);
+    background-image: url(../img/Work_together/Glass\ effect\ 375x1.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 85px;
@@ -47,7 +47,7 @@ section {
 
 @media (min-resolution: 192dpi) {
     .footer-work {
-        background-image: url(/src/img/Work_together/Glass\ effect\ 375@x2.png);
+        background-image: url(../img/Work_together/Glass\ effect\ 375@x2.png);
     }
 }
 
@@ -286,13 +286,13 @@ footer .container {
 @media (min-width: 768px) {
     .footer-work {
         padding: 80px 0 169px 0;
-        background-image: url(/src/img/Work_together/elements\ 768x1.png);
+        background-image: url(../img/Work_together/elements\ 768x1.png);
         background-size: 198px;
     }
 
     @media (min-resolution: 192dpi) {
         .footer-work {
-            background-image: url(/src/img/Work_together/elements\ 768@x2.png);
+            background-image: url(../img/Work_together/elements\ 768@x2.png);
         }
     }
 
@@ -388,13 +388,13 @@ footer .container {
 @media (min-width:1440px) {
     .footer-work {
         max-width: 1440px;
-        background-image: url(/src/img/Work_together/Glass\ effect\ 1440x1.png);
+        background-image: url(../img/Work_together/Glass\ effect\ 1440x1.png);
         background-size: 653px 636px;
     }
 
     @media (min-resolution: 192dpi) {
         .footer-work {
-            background-image: url(/src/img/Work_together/Glass\ effect\ 1440@x2.png);
+            background-image: url(../src/img/Work_together/Glass\ effect\ 1440@x2.png);
         }
     }
 
