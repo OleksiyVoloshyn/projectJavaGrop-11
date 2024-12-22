@@ -36,8 +36,8 @@
   gap: 64px;
   border-radius: 20px;
   padding: 24px;
-  width: 296px;
-  height: 222px;
+  width: 344px;
+  height: 270px;
   background: #242527;
 }
 .benefits-frame {
@@ -102,6 +102,6 @@
     width: 680px;
   }
   .benefits-frame-content {
-    width: 284px;
+    width: 322px;
   }
 }
