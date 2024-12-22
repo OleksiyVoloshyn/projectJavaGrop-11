@@ -1,0 +1,173 @@
+/* Основний контейнер */
+.faq-container {
+    background-color: #2a2a2e;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Контейнер заголовка */
+.faq-title-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* Заголовок FAQ */
+.faq-title {
+    font-size: 16px;
+    color: #FAFAFA66;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Вимкнуто сітку під заголовком */
+.faq-grid-overlay {
+    display: none;
+}
+
+/* Контейнер акордеонів */
+.accordion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Секції акордеонів */
+.ac {
+    background: #1e1e22;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    overflow: hidden;
+}
+
+/* Заголовок акордеона */
+.ac-header .ac-trigger {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    background: #1e1e22;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.ac-header .ac-trigger:hover {
+    background: #333;
+}
+
+/* Іконка акордеона */
+.ac-trigger .icon {
+    width: 1rem;
+    height: 1rem;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    transition: transform 0.3s ease;
+}
+
+.ac.is-active .ac-trigger .icon {
+    transform: rotate(180deg);
+}
+
+/* Панель акордеона */
+.ac-panel {
+    padding: 1rem;
+    color: #c2c2c2;
+}
+
+.ac-panel p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Респонсивний дизайн */
+@media (max-width: 768px) {
+    .accordion-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-title {
+        font-size: 1.8rem;
+    }
+
+    /* Порядок акордеонів для мобільного вигляду */
+    .accordion-container .ac:nth-child(1) {
+        order: 1;
+    }
+
+    .accordion-container .ac:nth-child(4) {
+        order: 2;
+    }
+
+    .accordion-container .ac:nth-child(2) {
+        order: 3;
+    }
+
+    .accordion-container .ac:nth-child(5) {
+        order: 4;
+    }
+
+    .accordion-container .ac:nth-child(3) {
+        order: 5;
+    }
+
+    .accordion-container .ac:nth-child(6) {
+        order: 6;
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq-title {
+        font-size: 3.5rem;
+    }
+
+    .accordion-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Порядок акордеонів для десктопу */
+    .accordion-container .ac:nth-child(1) {
+        order: 1;
+    }
+
+    .accordion-container .ac:nth-child(2) {
+        order: 2;
+    }
+
+    .accordion-container .ac:nth-child(3) {
+        order: 3;
+    }
+
+    .accordion-container .ac:nth-child(4) {
+        order: 4;
+    }
+
+    .accordion-container .ac:nth-child(5) {
+        order: 5;
+    }
+
+    .accordion-container .ac:nth-child(6) {
+        order: 6;
+    }
+
+    /* Візуальний поділ між колонками */
+    .ac:nth-child(odd) {
+        border-right: 1px solid #444; 
+    }
+
+    .ac:nth-child(even) {
+        border-left: 1px solid #444; 
+    }
+}
