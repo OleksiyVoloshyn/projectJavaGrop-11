@@ -1,18 +1,13 @@
 /* Контейнер секції відгуків */
 .reviews-container {
-<<<<<<< HEAD
   max-width: 1440px;
   margin: 0 16px;
   padding: 20px 0;
   position: relative;
-
-
-=======
     max-width: 1440px;
     padding: 20px 16px;
     position: relative;
     background-color: #1c1d20;
->>>>>>> main
 }
 
 /* Стилі для заголовка секції */
