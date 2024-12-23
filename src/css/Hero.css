@@ -1,6 +1,7 @@
 .section-hero {
   max-width: 375px;
   height: 812px;
+  background-color: #1c1d20;
   background-image: url('../img/Hero/bg_mob.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,7 +77,7 @@
     margin-bottom: 187px;
   }
   .soc-icon {
-    margin-left: 263px;
+    margin-left: 247px;
     width: 473px;
     height: 55px;
     gap: 8px;
@@ -119,7 +120,7 @@
     margin-bottom: 243px;
   }
   .soc-icon {
-    margin-left: 935px;
+    margin-left: 760px;
   }
   .soc-item-icon {
     padding: 18px 20px;
