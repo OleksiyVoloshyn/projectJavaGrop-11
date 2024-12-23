@@ -1,33 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const accordion = new Accordion('.accordion-container', {
-        duration: 300,
-        showMultiple: false,
+        duration: 300, // Тривалість анімації в мілісекундах
+        showMultiple: false, // Тільки одна активна панель
         elementClass: 'ac',
         triggerClass: 'ac-trigger',
         panelClass: 'ac-panel',
         activeClass: 'is-active',
-        onOpen: (currentElement) => {
-            updateIcon(currentElement.querySelector('.icon'), true); // Змінюємо іконку при відкритті
+        onOpen: (element) => {
+            const panel = element.querySelector('.ac-panel');
+            if (panel) {
+                // Установить высоту, равную высоте контента
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.overflow = "visible";
+            }
         },
-        onClose: (currentElement) => {
-            updateIcon(currentElement.querySelector('.icon'), false); // Змінюємо іконку при закритті
-        },
-    });
-
-    // Функція для зміни іконок SVG
-    function updateIcon(icon, isOpen) {
-        if (icon) {
-            const useElement = icon.querySelector('use');
-            if (useElement) {
-                useElement.setAttribute(
-                    'href',
-                    isOpen
-                        ? '/src/img/icon.svg#icon-arrowDOWN' // Іконка при відкритті
-                        : '/src/img/icon.svg#icon-arrowUP'  // Іконка при закритті
-                );
+        onClose: (element) => {
+            const panel = element.querySelector('.ac-panel');
+            if (panel) {
+                // Скрыть панель, сбросив высоту
+                panel.style.maxHeight = null;
+                panel.style.overflow = "hidden";
             }
         }
-    }
+    });
 
     // Сховати псевдоелемент ::after
     const style = document.createElement('style');
