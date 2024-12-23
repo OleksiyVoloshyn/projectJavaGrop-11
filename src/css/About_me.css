@@ -1,6 +1,8 @@
 .section-about-me {
   min-width: 320px;
   max-width: 1440px;
+
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -32,7 +34,6 @@
   background-color: rgba(28, 29, 32, 0.9);
   border-radius: 10px;
   position: relative;
-
 }
 
 .about-me-click::after {
@@ -85,7 +86,6 @@
   background-color: rgba(28, 29, 32, 1);
   color: rgba(250, 250, 250, 1);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .about-me-content.open {
@@ -99,7 +99,6 @@
   width: 100%;
   background-color: rgba(250, 250, 250, 0.2);
   margin-top: 15px;
-
 }
 
 ul {
@@ -188,7 +187,6 @@ ul li {
 
   .about-me-click {
     font-size: 18px;
-
   }
 
   .arrow-container {
