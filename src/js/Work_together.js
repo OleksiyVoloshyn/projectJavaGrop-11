@@ -1,12 +1,6 @@
-import axios from 'axios';
-import '../css/styles.css';
-
-
-
 const BASE_URL = "https://portfolio-js.b.goit.study/api";
 const REQUEST_URL = "https://portfolio-js.b.goit.study/api/requests";
 const form = document.querySelector('.form-subscribe');
-const buttonSend = document.querySelector('.footer-button-form');
 
 function fetchData(url = BASE_URL, options = {}) {
     return fetch(url, options)
@@ -17,28 +11,18 @@ function fetchData(url = BASE_URL, options = {}) {
             return response.json();
     })
 }
-
-form.addEventListener('submit', getClick);
-
+form.addEventListener("submit", getClick);
 function getClick(event) {
-    const { email, comment } = event.target.elements;
-    fetchData(BASE_URL, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ email: email.value, comment: comment.value })
-    })
-        .then(data => console.log(data))
-        .catch(error => console.log(error.message))
-} 
-/*
-fetch(BASE_URL, {
+    event.preventDefault()
+    const mail = event.target.elements.email.value;
+    const comments = event.target.elements.comment.value;
+    fetch(REQUEST_URL, {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
     },
-    body: JSON.stringify({ email: "gggg@com", comment: "++++hdjjj"})
+    body: JSON.stringify({ email: mail,  comment: comments}),
+    
 })
 .then(response => {
             if (!response.ok) {
@@ -46,6 +30,9 @@ fetch(BASE_URL, {
             }
             return response.json();
     })
-.then(data => console.log(data))
+.then(log => console.log(log.title, log.message))
 .catch(error => console.log(error.message))
-*/
+} 
+
+
+
