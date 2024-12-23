@@ -1,6 +1,5 @@
 .section-hero {
-  /* max-width: 375px; */
-  min-width: 320;
+  max-width: 375px;
   height: 812px;
   background-color: #1c1d20;
   background-image: url('../img/Hero/bg_mob.jpg');
