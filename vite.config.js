@@ -44,8 +44,5 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
-    optimizeDeps: {
-      include: ['swiper'],
-    },
   };
 });
