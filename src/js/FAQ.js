@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const accordion = new Accordion('.accordion-container', {
-        duration: 300, // Тривалість анімації в мілісекундах
-        showMultiple: false, // Тільки одна активна панель
+        duration: 300, 
+        showMultiple: false, 
         elementClass: 'ac',
         triggerClass: 'ac-trigger',
         panelClass: 'ac-panel',
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         onOpen: (element) => {
             const panel = element.querySelector('.ac-panel');
             if (panel) {
-                // Установить высоту, равную высоте контента
+                
                 panel.style.maxHeight = panel.scrollHeight + "px";
                 panel.style.overflow = "visible";
             }
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         onClose: (element) => {
             const panel = element.querySelector('.ac-panel');
             if (panel) {
-                // Скрыть панель, сбросив высоту
+                
                 panel.style.maxHeight = null;
                 panel.style.overflow = "hidden";
             }

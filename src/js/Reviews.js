@@ -1,7 +1,5 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 // чекаємо завантаження сторінки, щоб уникнути помилок
 document.addEventListener('DOMContentLoaded', function () {
