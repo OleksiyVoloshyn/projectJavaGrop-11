@@ -1,6 +1,8 @@
 .section-about-me {
   min-width: 320px;
   max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(28, 29, 32, 1);
 }
 
 .visually-hidden {
