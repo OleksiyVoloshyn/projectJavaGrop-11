@@ -51,9 +51,7 @@
     font-weight: bold;
     padding: 1.2rem;
     width: 100%;
-
     color: #fff;
-
     outline: none;
     cursor: pointer;
     text-align: left;
@@ -70,9 +68,6 @@
 .ac-trigger .icon {
     width: 24px;
     height: 24px;
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.3); 
     border-radius: 50%; 
@@ -137,7 +132,7 @@
     .accordion-container .ac:nth-child(6) { order: 6; }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .faq-title {
         font-size: 16px;
     }
