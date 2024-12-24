@@ -1,6 +1,7 @@
 /* Контейнер секції відгуків */
 .reviews-container {
   max-width: 1440px;
+  padding: 20px 16px;
   margin: 0 16px;
   padding: 20px 0;
   position: relative;
