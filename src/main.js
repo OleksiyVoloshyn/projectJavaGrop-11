@@ -8,3 +8,6 @@ import "./js/Hero";
 import "./js/Projects";
 import "./js/Reviews";
 import "./js/Work_together";
+
+import Accordion from 'accordion-js';
+import '../node_modules/accordion-js/dist/accordion';

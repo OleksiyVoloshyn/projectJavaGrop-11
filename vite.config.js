@@ -44,5 +44,8 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    optimizeDeps: {
+      include: ['swiper'], // це чат жпт сказав додати
+    },
   };
 });
