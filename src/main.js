@@ -1,8 +1,8 @@
-import Swiper from 'swiper/bundle';
+/*import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
 import Accordion from 'accordion-js';
-import '../node_modules/accordion-js/dist/accordion';
+import '../node_modules/accordion-js/dist/accordion';*/
 
 import "./js/About_me";
 import "./js/Benefits";
