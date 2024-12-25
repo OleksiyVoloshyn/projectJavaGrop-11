@@ -1,4 +1,4 @@
-import "./js/helper";
+/*import "./js/helper";*/
 
 // чекаємо завантаження сторінки, щоб уникнути помилок
 document.addEventListener('DOMContentLoaded', function () {
