@@ -1,4 +1,4 @@
-import "./js/helper";
+/*import "./js/helper";*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-p', {
