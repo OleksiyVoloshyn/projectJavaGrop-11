@@ -1,5 +1,4 @@
-/*import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';*/
+import "./js/helper";
 
 // чекаємо завантаження сторінки, щоб уникнути помилок
 document.addEventListener('DOMContentLoaded', function () {
