@@ -1,5 +1,4 @@
-/*import Swiper from 'swiper/bundle';*/
-/*import 'swiper/swiper-bundle.css';*/
+import "./js/helper";
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-p', {
