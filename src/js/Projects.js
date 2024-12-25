@@ -1,17 +1,16 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-
 document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-p', {
     slidesPerView: 1,
     spaceBetween: 16,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-p',
+      prevEl: '.swiper-button-prev-p',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-p',
       clickable: true,
     },
     keyboard: {
@@ -29,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateButtonsState(swiperInstance) {
-    const prevButton = document.querySelector('.swiper-button-prev');
-    const nextButton = document.querySelector('.swiper-button-next');
+    const prevButton = document.querySelector('.swiper-button-prev-p');
+    const nextButton = document.querySelector('.swiper-button-next-p');
 
     if (swiperInstance.isBeginning) {
       prevButton.setAttribute('disabled', 'true');
@@ -49,5 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-
-
